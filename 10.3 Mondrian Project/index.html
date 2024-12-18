@@ -19,11 +19,83 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .grid-container{
+      background-color: black;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .super-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+ 
+
+    .white{
+      background-color: #F0F1EC;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .blue{
+      background-color: #004592;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+    ._1{
+      grid-column: 2 / -1;
+    }
+
+    ._2{
+      grid-row: 2 / 4;
+    }
+
+    ._3{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    ._4{
+      grid-row: span 2;
+    }
+
+    .blue{
+      border-bottom: 10px solid black
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+   <div class = 'super-container'>
+    <div class = 'grid-container'>
+      <div class = 'red '></div>
+      <div class = 'white _1'></div>
+      <div class = 'white _2'></div>
+      <div class = 'white _3'></div>
+      <div class = 'blue'></div>
+      <div class = 'white _4'></div>
+      <div class = 'white _5'></div>
+      <div class = 'yellow'></div>
+      <div class = 'black'></div>
+      
+
+    </div>
+   </div>
 </body>
 
 </html>
